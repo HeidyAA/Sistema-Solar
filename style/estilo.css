@@ -1,0 +1,116 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 600px;
+    background-color: rgb(100, 126, 126);
+    background-image: url("https://images2.alphacoders.com/644/644457.jpg");
+    background-repeat: no-repeat;
+    background-size:100% ;
+    background-position: center;
+    background-attachment:fixed ;
+}
+
+ul{
+    list-style: none; /*quito viñetas*/
+    margin: 0; /*margen interno*/
+    padding: 0; /*margen externo*/
+    width: 200px;
+    background-color: rgb(239, 246, 246); 
+    border: 1px solid black; /*para poner borde*/
+}
+
+li{
+    text-align: center;
+    border-bottom: 1px solid black;
+    display: inline;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+/*barra de navegacion vertical*/
+li a{
+    display: block; /*se convierta en bloque(boton)*/
+    color: rgb(0, 0, 0);
+    text-decoration: none; /*decoracion de los subrayados*/
+    padding: 8px 0 8px 16px;
+}
+
+/* cambia de color, efectos, etc, al pasar el mouse */
+li a:hover{
+    background-color: rgb(100, 112, 112);
+    color: rgb(3, 3, 2);
+    font-size: large;
+}
+.active{
+    background-color:cadetblue ;
+    color: beige;
+    }
+
+header{
+    background-color:cornflowerblue;
+    text-align: center;
+    color: rgb(4, 9, 12);
+    width: 100%;
+    height: 50px;
+    box-shadow: 1px 1px 5px #000;
+}
+
+#menu{
+    width: 450px;
+    padding-top: 10px;
+    margin: auto;
+}
+#menu ul a{
+    font: 16px verdana;
+    padding: 10 px 20px 10 px 20px;
+}
+
+h4{
+    color:dodgerblue;
+    text-decoration: underline;
+    text-transform: initial;
+    letter-spacing: 3px; /*sirve para separar las letras*/
+    font-family:Arial, Helvetica, sans-serif ;
+    /*font-style: italic; cursiva*/
+    font-weight: bold; /*negrita*/
+    /*sombra horizontal - vertical - desenfoque - color */
+    text-shadow: 1px 1px 1px rgb(160, 160, 237) ;
+}
+
+p{
+    color:antiquewhite;
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: 3px;
+    line-height: 23px;
+}
+
+footer svg{
+    width: 2%
+}
+
+nav{
+    width: 100%;
+    height: 5%;
+}
+.navigation{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: right;
+    align-items: left;
+}
+.navigation h1{
+    text-align: center;
+}
+.navigation img{
+    position: absolute;
+    width: 15%;
+    right: 2 rem;
+}
